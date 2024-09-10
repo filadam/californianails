@@ -1,57 +1,69 @@
-<?php
-$show_title = ( true === get_theme_mod('display_title_and_tagline', true) );
+<div class="container-fluid custom-nav">
+    <div class="wrapper-container d-flex">
+        <!-- <div class="top-widget"></div> -->
+        <div class="site-logo col p-2">
+            <!-- <?php the_custom_logo(); ?> -->
+            <span><a href="/">CALIFORNIA BEAUTY</a></span>
+        </div>
+        <div class="icons-wrapper col-3 d-md-flex d-none">
+            <ul class="p-0 m-0">
+                <?php foreach (['booksy', 'facebook', 'instagram', 'tik-tok'] as $icon): ?>
+                    <li>
+                        <a href="<?php
+                        switch ($icon) {
+                            case 'booksy':
+                                echo 'http://calbeauty.booksy.com/';
+                                break;
+                            case 'facebook':
+                                echo 'https://www.instagram.com/californiaszczecin/';
+                                break;
+                            case 'instagram':
+                                echo 'https://www.instagram.com/californiaszczecin/';
+                                break;
+                            case 'tik-tok':
+                                echo 'https://www.tiktok.com/@milenainstruktor';
+                                break;
+                        }
+                        ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/<?= $icon ?>.png">
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+                <button class="p-0 p-2">
+                    <a
+                        href="https://booksy.com/pl-pl/110410_california-beauty_paznokcie_18078_szczecin?do=invite&_branch_match_id=1094214048942313081&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVL05OTTaNMkmMqEoCAHEsU1UiAAAA">
+                        ZAREZERWUJ TERAZ
+                    </a>
+                </button>
+            </ul>
+        </div>
 
-?>
-<div class="container-fluid top-header d-flex align-items-center">
-    <div class="container">
-        <div class="row m-0">
-            <div class="col d-flex justify-content-end order-1" id="primary-sidebar" role="complementary">
-                <div><?php dynamic_sidebar('header-end'); ?></div>
+        <div class="nav-wrapper col-1 p-2">
+            <input type="checkbox" class="openSidebarMenu p-5" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle pt-1">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'primary',
+                            'container' => 'false',
+                            'menu_class' => 'nav navbar-nav',
+                            'add_li_class' => "nav-item",
+                            'walker' => new bootstrap_5_wp_nav_menu_walker(),
+                        )
+                    );
+
+                    ?>
+                </ul>
+                <div class="bottom-site-logo">
+                    <?php the_custom_logo(); ?>
+                </div>
             </div>
-            <div class="col d-flex justify-content-start order-0" id="primary-sidebar" role="complementary">
-                <div><?php dynamic_sidebar('header-start'); ?></div>
-            </div>
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row m-0 header-container align-items-center">
-
-        <div class="col-8 col-xl-4 header-logo-area">
-            <?php if (has_custom_logo() && $show_title) : ?>
-                <div class="site-logo"><?php the_custom_logo(); ?></div>
-            <?php endif; ?>
-
-        </div>
-        <div class="col d-lg-block d-none">
-            <p class="header-subtitle text-center align-self-center"><?= pll_e("PRODUCTION, SERVICE AND TRADING COMPANY") ?></p>
-        </div>
-        <div class="col-4 d-xl-none text-end">
-            <button class="navbar-toggler custom-toggler navbar-light" type="button">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-        </div>
-
-        <div class="col header-nav-area m-0">
-            <?php if (has_nav_menu('primary')) : ?>
-                <nav id="site-navigation" class="navbar navbar-expand-xl navbar-light" role="navigation">
-                    <div class="collapse navbar-collapse justify-content-end " id="primary-menu">
-                        <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'primary',
-                                'container' => 'false',
-                                'menu_class' => 'nav navbar-nav',
-                                'add_li_class' => "nav-item",
-                                'walker' => new bootstrap_5_wp_nav_menu_walker(),
-                            )
-                        );
-
-                        ?>
-                    </div>
-                </nav><!-- #site-navigation -->
-            <?php endif; ?>
-        </div>
-
     </div>
 </div>

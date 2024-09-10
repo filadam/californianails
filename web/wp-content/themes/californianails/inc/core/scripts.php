@@ -58,23 +58,27 @@ function add_scripts()
 {
     wp_enqueue_script('wp-util');
 
-    wp_enqueue_style('eltex-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+    wp_enqueue_style('california-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
 
     if ('production' == WP_ENV) {
-        wp_enqueue_style('eltex-main', get_template_directory_uri() . '/assets/dist/css/main.min.css', array(), wp_get_theme()->get('Version'));
+        wp_enqueue_style('california-main', get_template_directory_uri() . '/assets/dist/css/main.min.css', array(), wp_get_theme()->get('Version'));
 
-        wp_enqueue_script('eltex-vendor', get_template_directory_uri() . '/assets/dist/js/vendors.bundle.min.js', array(), wp_get_theme()->get('Version'), true);
-        wp_enqueue_script('eltex-main', get_template_directory_uri() . '/assets/dist/js/main.bundle.min.js', array('eltex-vendor'), wp_get_theme()->get('Version'), true);
+        wp_enqueue_script('california-vendor', get_template_directory_uri() . '/assets/dist/js/vendors.bundle.min.js', array(), wp_get_theme()->get('Version'), true);
+        wp_enqueue_script('california-main', get_template_directory_uri() . '/assets/dist/js/main.bundle.min.js', array('california-vendor'), wp_get_theme()->get('Version'), true);
     } else {
-        wp_enqueue_style('eltex-main', get_template_directory_uri() . '/assets/css/main.css', array(), wp_get_theme()->get('Version'));
+        wp_enqueue_style('california-main', get_template_directory_uri() . '/assets/css/main.css', array(), wp_get_theme()->get('Version'));
 
-        wp_enqueue_script('eltex-vendor', get_template_directory_uri() . '/assets/js/vendors.bundle.js', array(), wp_get_theme()->get('Version'), true);
-        wp_enqueue_script('eltex-main', get_template_directory_uri() . '/assets/js/main.bundle.js', array('eltex-vendor'), wp_get_theme()->get('Version'), true);
+        wp_enqueue_script('california-vendor', get_template_directory_uri() . '/assets/js/vendors.bundle.js', array(), wp_get_theme()->get('Version'), true);
+        wp_enqueue_script('california-main', get_template_directory_uri() . '/assets/js/main.bundle.js', array('california-vendor'), wp_get_theme()->get('Version'), true);
     }
 
-    wp_localize_script('eltex-main', 'eltex_ajax_object', array(
-        'ajax_url' => admin_url('admin-ajax.php'),
-    ));
+    wp_localize_script(
+        'california-main',
+        'california_ajax_object',
+        array(
+            'ajax_url' => admin_url('admin-ajax.php'),
+        )
+    );
 }
 add_action('wp_enqueue_scripts', 'add_scripts', 20);
 
@@ -86,9 +90,13 @@ function add_head()
 
     ?>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
-    <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" /> -->
+    <!-- <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <?php
 }
 add_action('wp_head', 'add_head');

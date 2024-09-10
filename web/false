@@ -1,0 +1,146 @@
+[12-Jul-2023 08:55:07 UTC] Błąd ponownego ustawienia zdarzenia harmonogramu cron dla uchwytu: wf_scan_monitor, kod błędu: invalid_schedule, komunikat błędu: Harmonogram wydarzeń nie istnieje., dane: {"schedule":"wf_scan_monitor_interval","args":[],"interval":60}
+[12-Jul-2023 08:55:07 UTC] Błąd ponownego ustawienia zdarzenia harmonogramu cron dla uchwytu: action_scheduler_run_queue, kod błędu: invalid_schedule, komunikat błędu: Harmonogram wydarzeń nie istnieje., dane: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[25-Oct-2023 23:22:29 UTC] Błąd ponownego ustawienia zdarzenia harmonogramu cron dla uchwytu: wpseo_indexable_index_batch, kod błędu: invalid_schedule, komunikat błędu: Harmonogram wydarzeń nie istnieje., dane: {"schedule":"fifteen_minutes","args":[],"interval":900}
+[25-Oct-2023 23:22:47 UTC] Błąd ponownego ustawienia zdarzenia harmonogramu cron dla uchwytu: wpforms_email_summaries_cron, kod błędu: invalid_schedule, komunikat błędu: Harmonogram wydarzeń nie istnieje., dane: {"schedule":"wpforms_email_summaries_weekly","args":[],"interval":604800}
+[25-Oct-2023 23:23:46 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 25
+[25-Oct-2023 23:23:46 UTC] PHP Stack trace:
+[25-Oct-2023 23:23:46 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:23:46 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:23:46 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:23:46 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:23:46 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:23:46 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:23:46 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:23:46 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:27:29 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 25
+[25-Oct-2023 23:27:29 UTC] PHP Stack trace:
+[25-Oct-2023 23:27:29 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:27:29 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:27:29 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:27:29 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:27:29 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:27:29 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:27:29 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:27:29 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:27:30 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 25
+[25-Oct-2023 23:27:30 UTC] PHP Stack trace:
+[25-Oct-2023 23:27:30 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:27:30 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:27:30 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:27:30 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:27:30 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:27:30 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:27:30 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:27:30 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:28:01 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 25
+[25-Oct-2023 23:28:01 UTC] PHP Stack trace:
+[25-Oct-2023 23:28:01 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:28:01 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:28:01 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:28:01 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:28:01 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:28:01 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:28:01 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:28:01 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:28:02 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 25
+[25-Oct-2023 23:28:02 UTC] PHP Stack trace:
+[25-Oct-2023 23:28:02 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:28:02 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:28:02 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:28:02 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:28:02 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:28:02 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:28:02 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:28:02 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:28:36 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 23
+[25-Oct-2023 23:28:36 UTC] PHP Stack trace:
+[25-Oct-2023 23:28:36 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:28:36 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:28:36 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:28:36 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:28:36 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:28:36 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:28:36 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:28:36 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:28:45 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 23
+[25-Oct-2023 23:28:45 UTC] PHP Stack trace:
+[25-Oct-2023 23:28:45 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:28:45 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:28:45 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:28:45 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:28:45 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:28:45 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:28:45 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:28:45 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:29:00 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 23
+[25-Oct-2023 23:29:00 UTC] PHP Stack trace:
+[25-Oct-2023 23:29:00 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:29:00 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:29:00 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:29:00 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:29:00 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:29:00 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:29:00 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:29:00 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:29:01 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 23
+[25-Oct-2023 23:29:01 UTC] PHP Stack trace:
+[25-Oct-2023 23:29:01 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:29:01 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:29:01 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:29:01 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:29:01 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:29:01 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:29:01 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:29:01 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:30:50 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 23
+[25-Oct-2023 23:30:50 UTC] PHP Stack trace:
+[25-Oct-2023 23:30:50 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:30:50 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:30:50 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:30:50 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:30:50 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:30:50 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:30:50 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:30:50 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:30:52 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 23
+[25-Oct-2023 23:30:52 UTC] PHP Stack trace:
+[25-Oct-2023 23:30:52 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:30:52 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:30:52 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:30:52 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:30:52 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:30:52 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:30:52 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:30:52 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:31:08 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 24
+[25-Oct-2023 23:31:08 UTC] PHP Stack trace:
+[25-Oct-2023 23:31:08 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:31:08 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:31:08 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:31:08 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:31:08 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:31:08 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:31:08 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:31:08 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:44:51 UTC] PHP Warning:  Undefined variable $vel in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 36
+[25-Oct-2023 23:44:51 UTC] PHP Stack trace:
+[25-Oct-2023 23:44:51 UTC] PHP   1. {main}() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:0
+[25-Oct-2023 23:44:51 UTC] PHP   2. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php:17
+[25-Oct-2023 23:44:51 UTC] PHP   3. require_once() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php:19
+[25-Oct-2023 23:44:51 UTC] PHP   4. include() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php:106
+[25-Oct-2023 23:44:51 UTC] PHP   5. get_template_part($slug = 'template-parts/content/content-single-text', $name = *uninitialized*, $args = *uninitialized*) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php:15
+[25-Oct-2023 23:44:51 UTC] PHP   6. locate_template($template_names = [0 => 'template-parts/content/content-single-text.php'], $load = TRUE, $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php:204
+[25-Oct-2023 23:44:51 UTC] PHP   7. load_template($_template_file = 'C:\\Users\\dzibi\\Documents\\Projekty\\californianails.local\\web/wp-content/themes/californianails/template-parts/content/content-single-text.php', $load_once = FALSE, $args = []) C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:718
+[25-Oct-2023 23:44:51 UTC] PHP   8. require() C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php:785
+[25-Oct-2023 23:44:51 UTC] PHP Fatal error:  Uncaught TypeError: array_slice(): Argument #1 ($array) must be of type array, null given in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php:36
+Stack trace:
+#0 C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php(36): array_slice(NULL, 0, 3)
+#1 C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php(785): require('C:\\Users\\dzibi\\...')
+#2 C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template.php(718): load_template('C:\\Users\\dzibi\\...', false, Array)
+#3 C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#4 C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\single-text.php(15): get_template_part('template-parts/...')
+#5 C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-includes\template-loader.php(106): include('C:\\Users\\dzibi\\...')
+#6 C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-blog-header.php(19): require_once('C:\\Users\\dzibi\\...')
+#7 C:\Users\dzibi\Documents\Projekty\californianails.local\web\index.php(17): require('C:\\Users\\dzibi\\...')
+#8 {main}
+  thrown in C:\Users\dzibi\Documents\Projekty\californianails.local\web\wp-content\themes\californianails\template-parts\content\content-single-text.php on line 36

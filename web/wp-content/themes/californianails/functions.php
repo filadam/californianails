@@ -80,7 +80,7 @@ function change_comment_form($defaults)
     $commenter = wp_get_current_commenter();
 
     $req = get_option('require_name_email');
-    $html_req = ( $req ? " required='required'" : '' );
+    $html_req = ($req ? " required='required'" : '');
     $html5 = 'html5';
 
     $fields = array(
@@ -89,7 +89,7 @@ function change_comment_form($defaults)
             sprintf(
                 '<label for="author">%s%s</label>',
                 __('Name'),
-                ( $req ? ' <span class="required">*</span>' : '')
+                ($req ? ' <span class="required">*</span>' : '')
             ),
             sprintf(
                 '<input class="form-control" id="author" name="author" type="text" value="%s" size="30" maxlength="245"%s />',
@@ -102,11 +102,11 @@ function change_comment_form($defaults)
             sprintf(
                 '<label for="email">%s%s</label>',
                 __('Email'),
-                ( $req ? ' <span class="required">*</span>' : '')
+                ($req ? ' <span class="required">*</span>' : '')
             ),
             sprintf(
                 '<input class="form-control" id="email" name="email" %s value="%s" size="30" maxlength="100" aria-describedby="email-notes"%s />',
-                ( $html5 ? 'type="email"' : 'type="text"'),
+                ($html5 ? 'type="email"' : 'type="text"'),
                 esc_attr($commenter['comment_author_email']),
                 $html_req
             )
@@ -119,7 +119,7 @@ function change_comment_form($defaults)
             ),
             sprintf(
                 '<input class="form-control" id="url" name="url" %s value="%s" size="30" maxlength="200" />',
-                ( $html5 ? 'type="url"' : 'type="text"'),
+                ($html5 ? 'type="url"' : 'type="text"'),
                 esc_attr($commenter['comment_author_url'])
             )
         ),
@@ -142,20 +142,9 @@ function change_comment_form($defaults)
 }
 add_filter('comment_form_defaults', 'change_comment_form');
 
-add_filter( 'upload_mimes', 'custom_mimes' );
-function custom_mimes( $mimes ){
+add_filter('upload_mimes', 'custom_mimes');
+function custom_mimes($mimes)
+{
     $mimes['webm'] = 'video/webm';
     return $mimes;
 }
-
-add_action('init', function() {
-  pll_register_string('Eltex', 'Read More');
-  pll_register_string('Eltex', 'Contact Us');
-  pll_register_string('Eltex', 'Find Us');
-  pll_register_string('Eltex', 'News');
-  pll_register_string('Eltex', 'Read More');
-  pll_register_string('Eltex', 'Watch us in action!');
-  pll_register_string('Eltex', 'About Us');
-  pll_register_string('Eltex', ' Read More»');
-  pll_register_string('Eltex', "PRODUCTION, SERVICE AND TRADING COMPANY");
-});

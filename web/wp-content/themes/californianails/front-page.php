@@ -7,20 +7,22 @@
 get_header();
 
 ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row m-0">
-        <div class="slider">
-            <?php get_template_part('template-parts/content/video'); ?>
+        <div class="slider p-0">
+            <?php get_template_part('template-parts/content/gallery'); ?>
         </div>
     </div>
-    <div class="row m-0">
-        <?php get_template_part('template-parts/content/about'); ?>
+    <div class="row m-0 ">
+        <?php get_template_part('template-parts/content/comments-gallery'); ?>
     </div>
-    <div class="row m-0">
-        <?php get_template_part('template-parts/content/news'); ?>
+    <div class="row m-0 ">
+        <?php get_template_part('template-parts/content/instagram'); ?>
     </div>
-    <div class="row m-0">
-        <?php get_template_part('template-parts/content/contact-us'); ?>
+    <div class="row m-0 pb-3">
+        <div class="slider p-0">
+            <?php get_template_part('template-parts/content/news'); ?>
+        </div>
     </div>
 </div>
 <?php

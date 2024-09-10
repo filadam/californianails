@@ -11,4 +11,3 @@
         <h1><?php esc_html_e('404 - Page not found.'); ?></h1>
     </div>
 </div>
-<?php
