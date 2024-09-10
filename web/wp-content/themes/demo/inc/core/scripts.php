@@ -1,0 +1,107 @@
+<?php
+
+/**
+ * Disable the emoji's
+ */
+function disable_emojis()
+{
+    remove_action('wp_head', 'print_emoji_detection_script', 7);
+    remove_action('admin_print_scripts', 'print_emoji_detection_script');
+    remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('admin_print_styles', 'print_emoji_styles');
+    remove_filter('the_content_feed', 'wp_staticize_emoji');
+    remove_filter('comment_text_rss', 'wp_staticize_emoji');
+    remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+    add_filter('tiny_mce_plugins', 'disable_emojis_tinymce');
+    add_filter('wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2);
+}
+add_action('init', 'disable_emojis');
+
+/**
+ * Filter function used to remove the tinymce emoji plugin.
+ * 
+ * @param array $plugins 
+ * @return array Difference betwen the two arrays
+ */
+function disable_emojis_tinymce($plugins)
+{
+    if (is_array($plugins)) {
+        return array_diff($plugins, array('wpemoji'));
+    } else {
+        return array();
+    }
+}
+
+/**
+ * Remove emoji CDN hostname from DNS prefetching hints.
+ *
+ * @param array $urls URLs to print for resource hints.
+ * @param string $relation_type The relation type the URLs are printed for.
+ * @return array Difference betwen the two arrays.
+ */
+function disable_emojis_remove_dns_prefetch($urls, $relation_type)
+{
+    if ('dns-prefetch' == $relation_type) {
+        /** This filter is documented in wp-includes/formatting.php */
+        $emoji_svg_url = apply_filters('emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/');
+
+        $urls = array_diff($urls, array($emoji_svg_url));
+    }
+
+    return $urls;
+}
+
+/**
+ * Enqueue scripts and styles.
+ */
+function add_scripts()
+{
+    wp_enqueue_script('wp-util');
+
+    wp_enqueue_style('demo-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+
+    if ('production' == 'WP_ENV') {
+        wp_enqueue_style('demo-main', get_template_directory_uri() . '/assets/dist/css/main.min.css', array(), wp_get_theme()->get('Version'));
+
+        wp_enqueue_script('demo-vendor', get_template_directory_uri() . '/assets/dist/js/vendors.bundle.min.js', array(), wp_get_theme()->get('Version'), true);
+        wp_enqueue_script('demo-main', get_template_directory_uri() . '/assets/dist/js/main.bundle.min.js', array('demo-vendor'), wp_get_theme()->get('Version'), true);
+    } else {
+    wp_enqueue_style('demo-main', get_template_directory_uri() . '/assets/css/main.css', array(), wp_get_theme()->get('Version'));
+
+    wp_enqueue_script('demo-vendor', get_template_directory_uri() . '/assets/js/vendors.bundle.js', array(), wp_get_theme()->get('Version'), true);
+    wp_enqueue_script('demo-main', get_template_directory_uri() . '/assets/js/main.bundle.js', array('demo-vendor'), wp_get_theme()->get('Version'), true);
+    }
+
+    wp_localize_script('demo-main', 'demo_ajax_object', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+    ));
+    if (!function_exists('fa_custom_setup_kit')) {
+        function fa_custom_setup_kit($kit_url = 'https://kit.fontawesome.com/cb57e9b16a.js')
+        {
+            foreach (['wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts'] as $action) {
+                add_action(
+                    $action,
+                    function () use ($kit_url) {
+                        wp_enqueue_script('font-awesome-kit', $kit_url, [], null);
+                    }
+                );
+            }
+        }
+    }
+}
+add_action('wp_enqueue_scripts', 'add_scripts', 20);
+
+/**
+ * Adds scripts to head
+ */
+function add_head()
+{
+
+?>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<?php
+}
+add_action('wp_head', 'add_head');
